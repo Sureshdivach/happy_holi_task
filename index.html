@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url(./image/Happy-Holi-HD-Wallpaper-Desktop.jpg);
+            margin: 0;
+        }
+
+        .slider {
+            overflow: hidden;
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+    
+        }
+
+        .slider .slide {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            animation: slide 30s infinite;
+        }
+
+        .slider .slide:nth-child(1) {
+            background-image: url(./image/holi.jpg);
+            animation-delay: 25s;
+        }
+
+        .slider .slide:nth-child(2) {
+            background-image: url(./image/holi1.jpg);
+            animation-delay: 20s;
+        }
+
+        .slider .slide:nth-child(3) {
+            background-image: url(./image/holi3.jpg);
+            animation-delay: 15s;
+        }
+
+        .slider .slide:nth-child(4) {
+            background-image: url(./image/holi-backgrounds-image-hd-free-photo.jpg);
+            animation-delay: 10s;
+        }
+
+        .slider .slide:nth-child(5) {
+            background-image: url(./image/happy-holi-hd-uiluya531vr3m70r.jpg);
+            animation-delay: 5s;
+        }
+
+        @keyframes slide {
+
+            0%,
+            15%,
+            100% {
+                transform: translateX(0);
+                animation-timing-function: ease;
+            }
+
+            20% {
+                transform: translateX(100%);
+                animation-timing-function: step-start;
+            }
+
+            95% {
+                transform: translateX(100%);
+                animation-timing-function: ease;
+            }
+        }
+
+        nav {
+            /* border: 1px solid gray; */
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            box-shadow: rgba(255, 249, 249, 0) 0px 12px 28px 0px, rgba(255, 229, 229, 0) 0px 2px 4px 0px, rgba(255, 255, 255, 0) 0px 0px 0px 1px inset;
+        }
+
+        .first_nav {
+            /* border: 1px solid gray; */
+            width: 30%;
+            margin: auto;
+            text-align: center;
+            font-size: xx-large;
+            font-weight: bold;
+            color: aliceblue;
+        }
+
+        .secound_nav {
+            display: flex;
+            /* border: 1px solid gray; */
+            width: 50%;
+            justify-content: space-around;
+            margin: auto;
+            font-weight: bold;
+            font-size: x-large;
+            color: white;
+            list-style: none;
+        }
+
+        .secound_nav button {
+            border: 2px solid white;
+            font-weight: bold;
+            font-size: x-large;
+            background-color: transparent;
+            color: rgb(0, 58, 250);
+            border-radius: 10px;
+            color: white;
+
+
+        }
+
+        .secound_nav select {
+            border: none;
+            font-weight: bold;
+            font-size: x-large;
+            background-color: transparent;
+            color: rgb(0, 58, 250);
+            border-radius: 10px;
+            color: white;
+
+
+        }
+
+        option {
+            color: blue;
+        }
+
+        .secound_nav button:hover {
+            cursor: pointer;
+            background-color: rgb(141, 192, 236);
+        }
+
+        .section_container {
+            /* border: 1px solid white; */
+            padding: 50px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .first_div {
+            /* border: 1px solid white; */
+            width: 70%;
+            /* padding: 100px; */
+            /* height: 500px; */
+            font-size: x-large;
+            margin: 100px 0px 0px 100px;
+            color: rgb(255, 255, 255);
+        }
+
+        .button_div {
+            /* border: 1px solid gray; */
+            padding: 10px;
+        }
+
+        .button_div button {
+            padding: 10px 20px;
+            border-radius: 30px;
+            border: 1px solid white;
+            background-color: transparent;
+            color: white;
+            font-size: large;
+            font-weight: bold;
+        }
+
+        .secound_div {
+            width: 50%;
+            /* border: 1px solid white; */
+        }
+
+        .secound_div img {
+            width: 100%;
+            opacity: 180%;
+            height: 700px;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    
+
+    <div class="slider">
+        <div class="slide">
+            <nav>
+                <div class="first_nav">
+                    <p>Happy Holi By CWS</p>
+                </div>
+
+                <div class="secound_nav">
+
+                    <li><button>Home</button></li>
+                    <li>Contact</li>
+                    <li>About</li>
+                    <li>
+                        <select name="" id="">
+                            <option value="">More</option>
+                            <option value="">detail</option>
+                            <option value="">other</option>
+                        </select>
+                    </li>
+
+                </div>
+            </nav>
+            <div class="section_container">
+                <div class="first_div">
+                    <h3>Hey there!</h3>
+                    <h1>I am <br>Suresh kumar </h1>
+                    <p>Wishing you and your loved ones a very colourful Holi <br>
+                        May you forget all your worries and enjoy this day to the fullest.</p>
+                    <h2 style="color: rgb(255, 251, 251);">Happy Holi!</h2>
+                    <div class="button_div">
+                        <button style="color: rgb(255, 255, 255);">contact</button>
+                        <button>Login</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <nav>
+                <div class="first_nav">
+                    <p>Happy Holi By CWS</p>
+                </div>
+
+                <div class="secound_nav">
+
+                    <li><button>Home</button></li>
+                    <li>Contact</li>
+                    <li>About</li>
+                    <li>
+                        <select name="" id="">
+                            <option value="">More</option>
+                            <option value="">detail</option>
+                            <option value="">other</option>
+                        </select>
+                    </li>
+
+                </div>
+            </nav>
+            <div class="section_container">
+                <div class="first_div">
+                    <h3>Hey there!</h3>
+                    <h1>I am <br>Suresh kumar </h1>
+                    <p>Wishing you and your loved ones a very colourful Holi <br>
+                        May you forget all your worries and enjoy this day to the fullest.</p>
+                    <h2 style="color: rgb(255, 255, 255);">Happy Holi!</h2>
+                    <div class="button_div">
+                        <button style="color: rgb(255, 255, 255);">contact</button>
+                        <button>Login</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <nav>
+                <div class="first_nav">
+                    <p>Happy Holi By CWS</p>
+                </div>
+
+                <div class="secound_nav">
+
+                    <li><button>Home</button></li>
+                    <li>Contact</li>
+                    <li>About</li>
+                    <li>
+                        <select name="" id="">
+                            <option value="">More</option>
+                            <option value="">detail</option>
+                            <option value="">other</option>
+                        </select>
+                    </li>
+
+                </div>
+            </nav>
+            <div class="section_container">
+                <div class="first_div">
+                    <h3>Hey there!</h3>
+                    <h1>I am <br>Suresh kumar </h1>
+                    <p>Wishing you and your loved ones a very colourful Holi <br>
+                        May you forget all your worries and enjoy this day to the fullest.</p>
+                    <h2 style="color: rgb(255, 251, 251);">Happy Holi!</h2>
+                    <div class="button_div">
+                        <button style="color: rgb(255, 255, 255);">contact</button>
+                        <button>Login</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <nav>
+                <div class="first_nav">
+                    <p>Happy Holi By CWS</p>
+                </div>
+
+                <div class="secound_nav">
+
+                    <li><button>Home</button></li>
+                    <li>Contact</li>
+                    <li>About</li>
+                    <li>
+                        <select name="" id="">
+                            <option value="">More</option>
+                            <option value="">detail</option>
+                            <option value="">other</option>
+                        </select>
+                    </li>
+
+                </div>
+            </nav>
+            <div class="section_container">
+                <div class="first_div">
+                    <h3>Hey there!</h3>
+                    <h1>I am <br>Suresh kumar </h1>
+                    <p>Wishing you and your loved ones a very colourful Holi <br>
+                        May you forget all your worries and enjoy this day to the fullest.</p>
+                    <h2 style="color: rgb(255, 251, 251);">Happy Holi!</h2>
+                    <div class="button_div">
+                        <button style="color: rgb(255, 255, 255);">contact</button>
+                        <button>Login</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <nav>
+                <div class="first_nav">
+                    <p>Happy Holi By CWS</p>
+                </div>
+
+                <div class="secound_nav">
+
+                    <li><button>Home</button></li>
+                    <li>Contact</li>
+                    <li>About</li>
+                    <li>
+                        <select name="" id="">
+                            <option value="">More</option>
+                            <option value="">detail</option>
+                            <option value="">other</option>
+                        </select>
+                    </li>
+
+                </div>
+            </nav>
+            <div class="section_container">
+                <div class="first_div">
+                    <h3>Hey there!</h3>
+                    <h1>I am <br>Suresh kumar </h1>
+                    <p>Wishing you and your loved ones a very colourful Holi <br>
+                        May you forget all your worries and enjoy this day to the fullest.</p>
+                    <h2 style="color: rgb(255, 251, 251);">Happy Holi!</h2>
+                    <div class="button_div">
+                        <button style="color: rgb(255, 255, 255);">contact</button>
+                        <button>Login</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+</body>
+
+</html>
